@@ -1,0 +1,414 @@
+body{
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+nav{
+    background-color: #fff;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+    height: 120px;
+}
+
+nav .logo{
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: 24px;
+    color: #333;
+}
+
+nav .search-box{
+    position: relative;
+    left: 7%;
+    bottom: 70px;
+    padding: 10px 20px;
+}
+
+nav .search-box input[type="text"]{
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    position: relative;
+    left: 200px;
+}
+
+nav .search-box input[type="text"]:focus{
+    border-color: #007bff;
+    outline: none;
+}
+
+nav .search-box button{
+    height: 40px;
+    width: 70px;
+    position: absolute;
+    right: 41%;
+    top: 7px;
+    bottom: 0;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav .search-box button:hover{
+    background-color: darkorange;
+}
+
+.account{
+    float: right;
+    position: relative;
+    right: 150px;
+    bottom: 20px;
+}
+
+.account a{
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+.account button{
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.account button:hover{
+    background-color: #0056b3;
+}
+
+.account .dropdown-menu{
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: none;
+}
+
+.account:hover .dropdown-menu{
+    display: block;
+}
+
+.account .dropdown-menu .btn{
+    display: block;
+    padding: 10px 20px;
+    color: #333;
+    text-decoration: none;
+}
+
+.account .dropdown-menu .btn:hover{
+    background-color: #f4f4f4;
+}
+
+.account .dropdown-menu li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.account .dropdown-menu li a{
+    display: block;
+    padding: 10px 20px;
+    color: #333;
+    text-decoration: none;
+}
+
+.account .dropdown-menu li a:hover{
+    background-color: #f4f4f4;
+}
+
+@media (max-width: 768px) {
+    nav .logo{
+        float: none;
+        text-align: center;
+        margin: 10px 0;
+    }
+    
+    nav .search-box{
+        position: static;
+        width: 100%;
+        text-align: center;
+    }
+    
+    nav .search-box input[type="text"]{
+        width: 80%;
+    }
+    
+    nav .search-box button{
+        width: 100%;
+        margin-top: 10px;
+    }
+    
+    .account{
+        float: none;
+        text-align: center;
+        position: static;
+        margin-top: 10px;
+    }
+}
+
+.cart{
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.cart a{
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+.cart a:hover{
+    color: #007bff;
+}
+
+.cart button{
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.cart button:hover{
+    background-color: #0056b3;
+}
+
+.cart .dropdown-menu{
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: none;
+}
+
+.cart:hover .dropdown-menu{
+    display: block;
+}
+
+.cart .dropdown-menu .btn{
+    display: block;
+    padding: 10px 20px;
+    color: #333;
+    text-decoration: none;
+}
+
+.cart .dropdown-menu .btn:hover{
+    background-color: #f4f4f4;
+}
+
+.turn{
+    position: relative;
+    top: 120px;
+    background-color: #fff;
+    display: grid;
+    gap: 10px;
+    height: 200px;
+    grid-template-columns: repeat(6, 1fr);
+    border-radius: 10px;
+}
+
+.turn .t1 img{
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+    position: relative;
+    top: 20px;
+}
+
+.andriod{
+    position: relative;
+    top: 160px;
+    background-color: #fff;
+    display: grid;
+    gap: 10px;
+    height: 400%;
+    grid-template-columns: repeat(3, 1fr);
+    border-radius: 10px;
+}
+
+.andriod .a1 img{
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+    position: relative;
+    top: 20px;
+}
+
+.andriod .a1 h2{
+    position: relative;
+    top: 20px;
+    color: #333;
+    font-size: 16px;
+}
+
+.andriod .a1 p{
+    position: relative;
+    top: 20px;
+    color: #666;
+    font-size: 14px;
+    border-radius: 10px;
+}
+
+.andriod .a1 button{
+    position: relative;
+    top: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.iphone{
+    position: relative;
+    top: 160px;
+    background-color: #fff;
+    display: grid;
+    gap: 10px;
+    height: 400%;
+    grid-template-columns: repeat(3, 1fr);
+    border-radius: 10px;
+}
+
+.iphone .i1 img{
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+    position: relative;
+    top: 20px;
+}
+
+.iphone .i1 h2{
+    position: relative;
+    top: 20px;
+    color: #333;
+    font-size: 16px;
+}
+
+.iphone .i1 p{
+    position: relative;
+    top: 20px;
+    color: #666;
+    font-size: 14px;
+    border-radius: 10px;
+}
+
+.iphone .i1 button{
+    position: relative;
+    top: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.andiod-tablet{
+    position: relative;
+    top: 160px;
+    background-color: #fff;
+    display: grid;
+    gap: 10px;
+    height: 400%;
+    grid-template-columns: repeat(3, 1fr);
+    border-radius: 10px;
+}
+
+.andiod-tablet .tb img{
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+    position: relative;
+    top: 20px;
+}
+
+.andiod-tablet .tb h2{
+    position: relative;
+    top: 20px;
+    color: #333;
+    font-size: 16px;
+}
+
+.andiod-tablet .tb p{
+    position: relative;
+    top: 20px;
+    color: #666;
+    font-size: 14px;
+    border-radius: 10px;
+}
+
+.andiod-tablet .tb button{
+    position: relative;
+    top: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.renew{
+    position: relative;
+    top: 150px;
+    background-color: #fff;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    border-radius: 10px;
+}
+
+.renew .r1 img{
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+    position: relative;
+    top: 20px;
+}
+
+.renew .r1 h2{
+    position: relative;
+    top: 20px;
+    color: #333;
+    font-size: 16px;
+}
+
+.renew .r1 p{
+    position: relative;
+    top: 20px;
+    color: #666;
+    font-size: 14px;
+    border-radius: 10px;
+}
+
+.renew .r1 button{
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
